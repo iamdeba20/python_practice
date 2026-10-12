@@ -1,9 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
-x=[0,1,2,3,4,5]
-y=[1,4,9,16,25,36]
+x=np.arange(0,15,10)
+y=x**2
 fig ,ax =plt.subplots()
+print(fig.set_facecolor("yellow"))
+print(ax.set_facecolor("red"))
+fig.set_figheight(10)
+fig.set_figwidth(12)
 ax.plot(x,y)
-ax.annotate(text="maximum",xy=(5,36))
+print(fig.get_figheight())
+print(fig.get_figwidth())
+#ax.annotate(text="maximum",xy=(5,36))
 
 plt.show()
